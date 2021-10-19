@@ -3,7 +3,8 @@
     "blocks": [
       "flex-layout.row#fullbanner",
       "flex-layout.row#titleCarousel",
-      "flex-layout.row#carousel"
+      "flex-layout.row#carousel",
+      "flex-layout.row#newsletter"
     ]
   }
 }
