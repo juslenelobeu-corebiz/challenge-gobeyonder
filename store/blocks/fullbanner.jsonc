@@ -1,39 +1,46 @@
 {
-    "list-context.image-list#fullbanner": {
-        "children": [ "slider-layout#fullbanner" ],
-        "props": {
-            "preload": true,
-            "images": [
-                {
-                    "image": "assets/image-01.jpg",
-                    "description": "criar ou migrar seu e-commerce"
-                },
-                {
-                    "image": "assets/image-01.jpg",
-                    "description": "criar ou migrar seu e-commerce"
-                }
-            ]
-        }
-    },
-    
-    "slider-layout#fullbanner": {
-        "props": {
-            "itemsPerPage": {
-                "desktop": 1,
-                "tablet": 1,
-                "phone": 1
-            },
-            "infinite": true,
-            "showNavigationArrows": "desktopOnly",
-            "showPaginationDots": "always",
-            "fullWidth": true,
-            "blockClass": "fullbanner"
-        }
-    },
-
-    "rich-text#textItemOne": {
-        "props": {
-            "text": "## Lorem ipsum"
-        }
+  "flex-layout.row#fullbanner": {
+    "children": ["list-context.image-list#fullbanner"],
+    "props": {
+      "fullWidth": "100%"
     }
+  },
+
+  "list-context.image-list#fullbanner": {
+    "children": ["slider-layout#fullbanner"],
+    "props": {
+      "preload": true,
+      "images": [
+        {
+          "image": "assets/image-01.jpg",
+          "description": "criar ou migrar seu e-commerce"
+        },
+        {
+          "image": "assets/image-01.jpg",
+          "description": "criar ou migrar seu e-commerce"
+        }
+      ]
+    }
+  },
+
+  "slider-layout#fullbanner": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "showNavigationArrows": "desktopOnly",
+      "showPaginationDots": "always",
+      "fullWidth": true,
+      "blockClass": "fullbanner"
+    }
+  },
+
+  "rich-text#textItemOne": {
+    "props": {
+      "text": "## Lorem ipsum"
+    }
+  }
 }

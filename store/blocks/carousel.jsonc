@@ -1,0 +1,49 @@
+{
+  "flex-layout.row#titleCarousel": {
+    "children": [
+      "rich-text#titleCarousel"
+    ]
+  },
+  
+  "list-context.product-list#carousel": {
+    "blocks": ["product-summary.shelf#carousel"],
+    "children": ["slider-layout#carousel"]
+  },
+
+  "flex-layout.row#carousel": {
+    "children": ["list-context.product-list#carousel"]
+  },
+
+  "product-summary.shelf#carousel": {
+    "children": [
+      "product-summary-image",
+      "product-summary-name",
+      "product-rating-inline",
+      // "product-summary-space",
+      "product-summary-price",
+      "product-summary-buy-button"
+    ]
+  },
+
+  "slider-layout#carousel": {
+    "props": {
+      "itemsPerPage": {
+          "desktop": 4,
+          "tablet": 3,
+          "phone": 2
+      },
+        "infinite": true,
+        "showNavigationArrows": "desktopOnly",
+        "showPaginationDots": "mobileOnly",
+        "fullWidth": true,
+        "blockClass": "carousel"
+    }
+  },
+
+  "rich-text#titleCarousel": {
+    "props": {
+      "text": "### Mais Vendidos",
+      "blockClass":"carousel"
+    }
+  }
+}
