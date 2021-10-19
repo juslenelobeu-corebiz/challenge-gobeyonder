@@ -28,7 +28,7 @@
       "flex-layout.col#logo-desktop",
       "flex-layout.col#spacer",
       "search-bar",
-      "locale-switcher",
+      // "locale-switcher",
       "login",
       "minicart.v2"
     ]
@@ -48,8 +48,19 @@
     "props": {
       "title": "Logo",
       "href": "/",
-      "url": "https://brand.vtex.com/static/media/VTEX_pink_RGB.751a9fb5.svg",
-      "width": "80"
+      "url": "assets/site-logo-corebiz-preto-cinza.png",
+      "width": "180"
+    }
+  },
+  "login": {
+    "props": {
+      "showIconProfile": true,
+      "iconLabel": "Minha Conta"
+    }
+  }, 
+  "minicart.v2": {
+    "props": {
+      "quantityDisplay": "always"
     }
   },
   "header-layout.mobile": {
