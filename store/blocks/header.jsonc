@@ -55,9 +55,16 @@
   "login": {
     "props": {
       "showIconProfile": true,
-      "iconLabel": "Minha Conta"
+      "iconLabel": "Minha Conta",
+      "blockClass":"sticky-header"
     }
   }, 
+  "search-bar": {
+    "props": {
+      "blockClass":"sticky-header",
+      "placeholder": "O que esta procurando?"
+    }
+  },
   "minicart.v2": {
     "props": {
       "quantityDisplay": "always"
@@ -67,7 +74,10 @@
     "children": ["sticky-layout#mobile"]
   },
   "sticky-layout#mobile": {
-    "children": ["flex-layout.row#mobile"]
+    "children": ["flex-layout.row#mobile"],
+    "props": {
+      "blockClass": "sticky-header"
+    }
   },
   "flex-layout.row#mobile": {
     "children": [

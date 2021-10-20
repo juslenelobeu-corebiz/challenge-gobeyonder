@@ -1,0 +1,15 @@
+.searchBarInnerContainer--sticky-header {
+    width: 100%;
+    min-width: 600px;
+    max-width: 718px;
+}
+
+.autoCompleteOuterContainer--sticky-header :global(.vtex-input-prefix__group) {
+    border: none;
+    border-bottom: thin solid black !important;
+    border-radius: 0;
+}
+
+.searchBarInnerContainer--sticky-header :global(.vtex-styleguide-9-x-input)::placeholder {
+    font-size: 12px;
+}
