@@ -3,13 +3,28 @@
     min-width: 600px;
     max-width: 718px;
 }
-
 .autoCompleteOuterContainer--sticky-header :global(.vtex-input-prefix__group) {
     border: none;
     border-bottom: thin solid black !important;
     border-radius: 0;
 }
-
 .searchBarInnerContainer--sticky-header :global(.vtex-styleguide-9-x-input)::placeholder {
     font-size: 12px;
+}
+
+.infoCardContainer--fullbanner {
+    height: 430px;
+    width: 100%;
+}
+.infoCardTextContainer--fullbanner {
+    margin-left: 5rem;
+}
+.infoCardHeadline--fullbanner {
+    color: white;
+    font-size: 30px;
+}
+.infoCardSubhead--fullbanner {
+    color: white;
+    font-size: 45px;
+    font-weight: 600;
 }
