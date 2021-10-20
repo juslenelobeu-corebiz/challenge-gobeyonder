@@ -14,13 +14,53 @@
   },
   "flex-layout.row#footer": { 
     "children": [
-      "image"
-    ]
+      "flex-layout.col#footerCol1",
+      "flex-layout.col#footerCol2",
+      "flex-layout.col#footerCol3"
+    ],
+   "props": {
+     "colGap": 5
+   } 
   },
-  "image": {
+  "flex-layout.col#footerCol1": {
+    "children": ["rich-text#footerTitle", "rich-text#footerAddress"]
+  },
+  "flex-layout.col#footerCol2": {
+    "children": ["link#contact", "link#consultant"]
+  },
+  "flex-layout.col#footerCol3": {
+    "children": ["rich-text#footerCorebiz", "rich-text#footerVtex"]
+  },
+  "rich-text#footerTitle": {
     "props": {
-      "width": 100,
-      "src": "https://brand.vtex.com/static/media/VTEX_pink_RGB.751a9fb5.svg"
+      "text": "### Localização"
+    }
+  },
+  "rich-text#footerAddress": {
+    "props": {
+      "text": "Avenida Andrômeda, 2000. Blocl 6 e 8 \n Alphavile SP \n [brasil@corebiz.ag](mailto:brasil@corebiz.ag) \n [+55 11 3090 1039](tel:+551130901039)"
+    }
+  },
+  "link#contact": {
+    "props": {
+      "href": "/",
+      "label": "Entre em contato"
+    }
+  },
+  "link#consultant": {
+    "props": {
+      "href": "/",
+      "label": "Fale com o nosso consultor online"
+    }
+  },
+  "rich-text#footerCorebiz": {
+    "props": {
+      "text": "Created by \n [![Corebiz](assets/site-logo-corebiz-branco-cinza.png)](http://www.corebiz.ag)"
+    }
+  },
+  "rich-text#footerVtex": {
+    "props": {
+      "text": "Created by \n [![Corebiz](assets/logo-vtex.png)](http://www.vtex.com)"
     }
   }
 }
