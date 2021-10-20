@@ -1,0 +1,16 @@
+.infoCardContainer--fullbanner {
+    height: 430px;
+    width: 100%;
+}
+.infoCardTextContainer--fullbanner {
+    margin-left: 5rem;
+}
+.infoCardHeadline--fullbanner {
+    color: white;
+    font-size: 30px;
+}
+.infoCardSubhead--fullbanner {
+    color: white;
+    font-size: 45px;
+    font-weight: 600;
+}

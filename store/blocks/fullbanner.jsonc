@@ -1,39 +1,94 @@
 {
-    "list-context.image-list#fullbanner": {
-        "children": [ "slider-layout#fullbanner" ],
-        "props": {
-            "preload": true,
-            "images": [
-                {
-                    "image": "assets/image-01.jpg",
-                    "description": "criar ou migrar seu e-commerce"
-                },
-                {
-                    "image": "assets/image-01.jpg",
-                    "description": "criar ou migrar seu e-commerce"
-                }
-            ]
-        }
-    },
-    
-    "slider-layout#fullbanner": {
-        "props": {
-            "itemsPerPage": {
-                "desktop": 1,
-                "tablet": 1,
-                "phone": 1
-            },
-            "infinite": true,
-            "showNavigationArrows": "desktopOnly",
-            "showPaginationDots": "always",
-            "fullWidth": true,
-            "blockClass": "fullbanner"
-        }
-    },
+  "list-context.image-list#fullbanner": {
+      "children": [ "slider-layout#fullbanner" ],
+      "props": {
+          "preload": true,
+          "images": [
+              {
+                  "image": "assets/image-01.jpg",
+                  "description": "criar ou migrar seu e-commerce"
+              },
+              {
+                  "image": "assets/image-01.jpg",
+                  "description": "criar ou migrar seu e-commerce"
+              }
+          ]
+      }
+  },
 
-    "rich-text#textItemOne": {
-        "props": {
-            "text": "## Lorem ipsum"
-        }
+  "slider-layout#fullbanner": {
+      "props": {
+          "itemsPerPage": {
+              "desktop": 1,
+              "tablet": 1,
+              "phone": 1
+          },
+          "infinite": true,
+          "showNavigationArrows": "desktopOnly",
+          "showPaginationDots": "always",
+          "fullWidth": true,
+          "blockClass": "fullbanner"
+      },
+      "children": ["info-card#01", "info-card#02", "info-card#03", "info-card#04"]
+  },
+
+//   "rich-text#textItemOne": {
+//       "props": {
+//           "text": "## Lorem ipsum"
+//       }
+//   },
+
+  // info card
+  "info-card#01": {
+    "props": {
+      "id": "info-card-example",
+      "isFullModeStyle": true,
+      "textPosition": "left",
+      "imageUrl": "assets/image-01.jpg",
+      "headline": "Olá, o que você está buscando?",
+      "subhead": "Criar ou migrar seu e-commerce?",
+      "callToActionMode": "none",
+      "blockClass": "fullbanner",
+      "textAlignment": "center"
     }
+  },
+  "info-card#02": {
+    "props": {
+      "id": "info-card-example",
+      "isFullModeStyle": true,
+      "textPosition": "left",
+      "imageUrl": "assets/image-02.jpg",
+      "headline": "Olá, o que você está buscando?",
+      "subhead": "Criar ou migrar seu e-commerce?",
+      "callToActionMode": "none",
+      "blockClass": "fullbanner",
+      "textAlignment": "center"
+    }
+  },
+  "info-card#03": {
+    "props": {
+      "id": "info-card-example",
+      "isFullModeStyle": true,
+      "textPosition": "left",
+      "imageUrl": "assets/image-03.jpg",
+      "headline": "Olá, o que você está buscando?",
+      "subhead": "Criar ou migrar seu e-commerce?",
+      "callToActionMode": "none",
+      "blockClass": "fullbanner",
+      "textAlignment": "center"
+    }
+  },
+  "info-card#04": {
+    "props": {
+      "id": "info-card-example",
+      "isFullModeStyle": true,
+      "textPosition": "left",
+      "imageUrl": "assets/image-04.jpg",
+      "headline": "Olá, o que você está buscando?",
+      "subhead": "Criar ou migrar seu e-commerce?",
+      "callToActionMode": "none",
+      "blockClass": "fullbanner",
+      "textAlignment": "center"
+    }
+  }
 }

@@ -5,7 +5,7 @@
     ]
   },
   "flex-layout.row#fullbanner": {
-    "children": [ "list-context.image-list#fullbanner" ],
+    "children": [ "slider-layout#fullbanner" ],
     "props": {
       "fullWidth": "100%"
     }
