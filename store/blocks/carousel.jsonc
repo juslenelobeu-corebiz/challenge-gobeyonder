@@ -1,7 +1,13 @@
 {
   "flex-layout.row#titleCarousel": {
     "children": [
-      "rich-text#titleCarousel"
+      "flex-layout.col#title"
+    ]
+  },
+  "flex-layout.col#title": {
+    "children": [
+      "rich-text#titleCarousel",
+      "rich-text#line"
     ]
   },
   
@@ -21,8 +27,42 @@
       "product-rating-inline",
       // "product-summary-space",
       "product-summary-price",
-      "product-summary-buy-button"
-    ]
+      // "product-summary-buy-button"
+      "link.product#buy-button"
+    ],
+    "props": {
+      "blockClass": "carousel"
+    }
+  },
+
+  "product-summary-name": {
+    "props": {
+      "blockClass": "carousel"
+    }
+  },
+
+  "product-summary-price": {
+    "props": {
+      "blockClass": "carousel"
+    }
+  },
+
+  "product-summary-buy-button": {
+    "props": {
+      "buyButtonText": "Comprar",
+      // "displayBuyButton": "displayButtonHover",
+      "buyButtonBehavior": "alwaysAddToTheCart",
+      "blockClass": "carousel"
+    }
+  },
+
+  "link.product#buy-button": {
+    "props": {
+      "href": "/{slug}/p",
+      "label": "Comprar",
+      "displayMode": "button",
+      "blockClass": "carousel"
+    }
   },
 
   "slider-layout#carousel": {
@@ -44,6 +84,13 @@
     "props": {
       "text": "### Mais Vendidos",
       "blockClass":"carousel"
+    }
+  },
+
+  "rich-text#line": {
+    "props": {
+      "text": "---",
+      "blockClass":"line"
     }
   }
 }
