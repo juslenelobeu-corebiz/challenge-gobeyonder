@@ -1,0 +1,9 @@
+.heading--carousel {
+    font-size: 20px;
+    margin-bottom: .5rem;
+}
+
+.wrapper--line {
+    width: 65px;
+    border-bottom: thick solid #c0c0c0;
+}

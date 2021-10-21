@@ -1,0 +1,49 @@
+.container--carousel {
+    width: 216px;
+    border-radius: 0;
+}
+
+.element--carousel {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 0;
+}
+.element--carousel:hover {
+    background-color: #E6E8EA;
+}
+.element--carousel:hover :global(.vtex-store-link-0-x-link) {
+    /* display: flex; */
+    opacity: 1;
+}
+
+.nameContainer--carousel, .priceContainer--carousel {
+    padding: .5rem 0;
+}
+
+.productBrand--carousel {
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.installmentContainer--carousel {
+    font-size: 11px;
+}
+
+.price_sellingPriceContainer--carousel {
+    font-size: 12px;
+}
+
+.price_listPriceLabel--carousel, .price_sellingPriceLabel--carousel {
+    text-transform: lowercase;
+}
+
+.price_sellingPriceLabel--carousel {
+    color: black;
+}
+
+.price_sellingPrice--carousel {
+    font-size: 18px;
+    color: black;
+    font-weight: 600;
+}
