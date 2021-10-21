@@ -21,8 +21,7 @@
       "horizontalAlign": "center",
       "verticalAlign": "center",
       "preventHorizontalStretch": true,
-      "preventVerticalStretch": true,
-      "fullWidth": true
+      "preventVerticalStretch": true
     },
     "children": [
       "flex-layout.col#logo-desktop",

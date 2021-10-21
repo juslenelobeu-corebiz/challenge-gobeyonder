@@ -13,3 +13,7 @@
 .searchBarInnerContainer--sticky-header :global(.vtex-styleguide-9-x-input)::placeholder {
     font-size: 12px;
 }
+
+.container {
+    max-width: 1200px;
+}
