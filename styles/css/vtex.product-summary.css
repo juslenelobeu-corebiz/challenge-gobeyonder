@@ -12,8 +12,13 @@
 .element--carousel:hover {
     background-color: #E6E8EA;
 }
-.element--carousel:hover :global(.vtex-store-link-0-x-link) {
-    /* display: flex; */
+.element--carousel :global(.vtex-button) {
+    opacity: 0;
+    max-width: 125px;
+    margin: 0 auto;
+    font-size: 12px;
+}
+.element--carousel:hover :global(.vtex-button) {
     opacity: 1;
 }
 

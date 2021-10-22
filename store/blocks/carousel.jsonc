@@ -25,10 +25,8 @@
       "product-summary-image",
       "product-summary-name",
       "product-rating-inline",
-      // "product-summary-space",
       "product-summary-price",
-      // "product-summary-buy-button"
-      "link.product#buy-button"
+      "add-to-cart-button"
     ],
     "props": {
       "blockClass": "carousel"
@@ -47,21 +45,10 @@
     }
   },
 
-  "product-summary-buy-button": {
+  "add-to-cart-button": {
     "props": {
-      "buyButtonText": "Comprar",
-      // "displayBuyButton": "displayButtonHover",
-      "buyButtonBehavior": "alwaysAddToTheCart",
-      "blockClass": "carousel"
-    }
-  },
-
-  "link.product#buy-button": {
-    "props": {
-      "href": "/{slug}/p",
-      "label": "Comprar",
-      "displayMode": "button",
-      "blockClass": "carousel"
+      "text": "Comprar",
+      "blockClass": "carouselButton"
     }
   },
 
