@@ -1,0 +1,25 @@
+.flexRow--footer {
+    background: black;
+    padding: 2rem 0;
+}
+
+.flexCol--footerLinks {
+    justify-content: center;
+    gap: 1rem;
+}
+
+.flexColChild--footerLinks {
+    height: auto!important;
+    display: flex;
+    
+}
+
+.flexCol--footerCopyRights {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.flexColChild--footerCopyRights {
+    display: flex;
+    align-items: center;
+}

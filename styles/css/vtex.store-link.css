@@ -1,0 +1,20 @@
+.buttonLink--footerLink {
+    width: 195px;
+    font-size: 12px;
+    background-color: white;
+    color: black;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.buttonLink--footerLink:hover {
+    background-color: whitesmoke;
+    color: black;
+}
+.label--footerLink {
+    width: 70%;
+    padding: 0;
+    order: 2;
+}
