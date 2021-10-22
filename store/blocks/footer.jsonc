@@ -2,16 +2,25 @@
   "footer": {
     "blocks": ["footer-layout.desktop", "footer-layout.mobile"]
   },
+
+  // flex-row desktop
   "footer-layout.desktop": { 
     "children": [
       "flex-layout.row#footer"
-    ]
+    ],
+    "props": {
+       "horizontalAlign": "between"
+    } 
   },
+
+  // flex-row mobile
   "footer-layout.mobile": { 
     "children": [
       "flex-layout.row#footer"
     ]
   },
+
+  // flex-row desktop
   "flex-layout.row#footer": { 
     "children": [
       "flex-layout.col#footerCol1",
@@ -19,48 +28,111 @@
       "flex-layout.col#footerCol3"
     ],
    "props": {
-     "colGap": 5
+     "colGap": 5,
+      "horizontalAlign": "center",
+      "blockClass": "footer"
    } 
   },
+
+  // flex-cols
   "flex-layout.col#footerCol1": {
-    "children": ["rich-text#footerTitle", "rich-text#footerAddress"]
+    "children": ["flex-layout.col#title", "rich-text#footerAddress"],
+    "props": {
+      "blockClass": ["footerCol","footerText"]
+    }
   },
   "flex-layout.col#footerCol2": {
-    "children": ["link#contact", "link#consultant"]
+    "children": ["link#contact", "link#consultant"],
+    "props": {
+      "horizontalAlign": "center",
+      "blockClass": ["footerCol","footerLinks"]
+    }
   },
   "flex-layout.col#footerCol3": {
+    "children": ["flex-layout.row#footerRowCopyRights"],
+    "props": {
+      "blockClass": ["footerCol","footerCopyRights"]
+    }
+  },
+
+  // flex-row copyright
+  "flex-layout.row#footerRowCopyRights": {
     "children": ["rich-text#footerCorebiz", "rich-text#footerVtex"]
+  },
+
+  // flex-row title
+  "flex-layout.col#title": {
+    "children": [
+      "rich-text#footerTitle",
+      "rich-text#line"
+    ]
   },
   "rich-text#footerTitle": {
     "props": {
-      "text": "### Localização"
+      "text": "### Localização",
+      "blockClass": ["footer", "footerTitle"]
     }
   },
+  "rich-text#line": {
+    "props": {
+      "text": "---",
+      "blockClass": ["line", "lineFooter"]
+    }
+  },
+  
+  // address text
   "rich-text#footerAddress": {
     "props": {
-      "text": "Avenida Andrômeda, 2000. Blocl 6 e 8 \n Alphavile SP \n [brasil@corebiz.ag](mailto:brasil@corebiz.ag) \n [+55 11 3090 1039](tel:+551130901039)"
+      "text": "Avenida Andrômeda, 2000. Bloco 6 e 8 \n Alphavile SP \n [brasil@corebiz.ag](mailto:brasil@corebiz.ag) \n [+55 11 3090 1039](tel:+551130901039)",
+      "blockClass": ["footer", "footerAddress"]
     }
   },
-  "link#contact": {
+
+  // icons button
+  "rich-text#footerIconMail": {
     "props": {
+      "text": "![Ícone de e-mail](assets/icon-mail.png)",
+      "blockClass": ["footer", "footerIcon"]
+    }
+  },
+  "rich-text#footerIconHeadphone": {
+    "props": {
+      "text": "![Ícone de e-mail](assets/icon-headphone.png)",
+      "blockClass": ["footer", "footerIcon"]
+    }
+  },
+
+  // buttons link
+  "link#contact": {
+    "children": ["rich-text#footerIconMail"],
+    "props": {
+      "blockClass": "footerLink",
       "href": "/",
-      "label": "Entre em contato"
+      "label": "Entre em contato",
+      "displayMode": "button"
     }
   },
   "link#consultant": {
+    "children": ["rich-text#footerIconHeadphone"],
     "props": {
+      "blockClass": "footerLink",
       "href": "/",
-      "label": "Fale com o nosso consultor online"
+      "label": "Fale com o nosso consultor online",
+      "displayMode": "button"
     }
   },
+
+  // copyright icons
   "rich-text#footerCorebiz": {
     "props": {
-      "text": "Created by \n [![Corebiz](assets/site-logo-corebiz-branco-cinza.png)](http://www.corebiz.ag)"
+      "text": "Created by \n [![Corebiz](assets/site-logo-corebiz-branco-cinza.png)](http://www.corebiz.ag)",
+      "blockClass": ["footer", "footerCopyRightCreated"]
     }
   },
   "rich-text#footerVtex": {
     "props": {
-      "text": "Created by \n [![Corebiz](assets/logo-vtex.png)](http://www.vtex.com)"
+      "text": "Powered by \n [![Corebiz](assets/logo-vtex.png)](http://www.vtex.com)",
+      "blockClass": ["footer", "footerCopyRightPowered"]
     }
   }
 }
