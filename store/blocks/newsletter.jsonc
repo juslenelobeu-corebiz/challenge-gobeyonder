@@ -2,7 +2,6 @@
   "flex-layout.row#newsletter": {
     "children": ["flex-layout.col#newsletter"],
     "props": {
-      "colGap": 4,
       "blockClass": "newsletter"
     }
   },
@@ -32,7 +31,27 @@
       "newsletter-submit"
     ],
     "props": {
+      "colGap": 2,
       "blockClass": "newsletterFlexForm"
+    }
+  },
+  "flex-layout.col#formName": {
+    "children": ["newsletter-input-name"],
+    "props": {
+      "blockClass":"newsletterFormInput"
+    }
+  },
+
+  "newsletter-input-name": {
+    "props": {
+      "placeholderText": "Digite seu nome",
+      "blockClass":"newsletterFormInput"
+    }
+  },
+  "newsletter-input-email": {
+    "props": {
+      "placeholderText": "Digite seu email",
+      "blockClass":"newsletterFormInput"
     }
   },
   "newsletter-submit": {
