@@ -1,7 +1,35 @@
 {
   "store.product": {
     "children": [
-      
+      "flex-layout.row#product"
     ]
+  },
+  "flex-layout.row#product": {
+    "children": [
+     "flex-layout.col#images",
+     "flex-layout.col#description"
+    ],
+    "props": {
+      "colGap": 4,
+      "horizontalAlign": "center",
+      "marginTop": 10
+    }
+  },
+  "flex-layout.col#images": {
+    "children": [
+      "product-images"
+    ]
+  },
+  "flex-layout.col#description": {
+    "children": [
+      "product-name",
+      "product-brand",
+      "product-description"
+    ]
+  },
+  "product-images": {
+    "props": {
+      "displayThumbnailsArrows": true
+    }
   }
 }
