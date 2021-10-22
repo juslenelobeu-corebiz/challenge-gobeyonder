@@ -1,0 +1,3 @@
+.formSubmitContainer--newsletterButton :global(.vtex-button) {
+    width: 100%;
+}

@@ -1,0 +1,10 @@
+.flexRow--newsletter {
+    background-color: #F2F2F2;
+    padding: 2rem 0;
+    margin: 1rem 0;
+}
+
+.flexRowContent--newsletter {
+    display: flex;
+    justify-content: center;
+}

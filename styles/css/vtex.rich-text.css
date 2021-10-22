@@ -7,3 +7,9 @@
     width: 65px;
     border-bottom: thick solid #c0c0c0;
 }
+
+.headingLevel4--newsletterTitle {
+    font-size: 22px;
+    margin-top: 0;
+    margin-bottom: 1rem;
+}

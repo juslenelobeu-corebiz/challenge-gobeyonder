@@ -2,41 +2,43 @@
   "flex-layout.row#newsletter": {
     "children": ["flex-layout.col#newsletter"],
     "props": {
-      "blockClass": "newsletter",
-    //   "fullWidth": true,
-      "horizontalAlign": "center",
-      "colGap": 4
+      "colGap": 4,
+      "blockClass": "newsletter"
     }
   },
   "flex-layout.col#newsletter": {
-    "children": ["rich-text#newsletter", "flex-layout.row#newsletterForm"]
-  },
-  "flex-layout.row#newsletterTitle": {
-    "children": ["rich-text#newsletter"]
-  },
-  "flex-layout.row#newsletterForm": {
-    "children": ["newsletter-form"]
+    "children": ["rich-text#newsletter", "newsletter-form"],
+    "props": {
+      "horizontalAlign": "center"
+    }
   },
   "rich-text#newsletter": {
     "props": {
-      "text": "## Participe de nossas news com promoções e novidades!",
-      "textPosition": "CENTER"
+      "text": "#### Participe de nossas news com promoções e novidades!",
+      "textPosition": "CENTER",
+      "blockClass": "newsletterTitle"
     }
   },
   "newsletter-form": {
-    "children": ["flex-layout.row"],
-    "props": {}
+    "children": ["flex-layout.row#formNewsletter"],
+    "props": {
+      "blockClass": "newsletterForm"
+    }
   },
-  "flex-layout.row": {
+  "flex-layout.row#formNewsletter": {
     "children": [
       "newsletter-input-name",
       "newsletter-input-email",
       "newsletter-submit"
-    ]
+    ],
+    "props": {
+      "blockClass": "newsletterFlexForm"
+    }
   },
   "newsletter-submit": {
     "props": {
-      "submitButtonLabel": "Eu quero!"
+      "submitButtonLabel": "Eu quero!",
+      "blockClass": "newsletterButton"
     }
   }
 }
