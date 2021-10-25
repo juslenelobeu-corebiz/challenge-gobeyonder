@@ -64,7 +64,7 @@
   "flex-layout.col#title": {
     "children": [
       "rich-text#footerTitle",
-      "rich-text#line"
+      "rich-text#lineFooter"
     ]
   },
   "rich-text#footerTitle": {
@@ -73,7 +73,7 @@
       "blockClass": ["footer", "footerTitle"]
     }
   },
-  "rich-text#line": {
+  "rich-text#lineFooter": {
     "props": {
       "text": "---",
       "blockClass": ["line", "lineFooter"]

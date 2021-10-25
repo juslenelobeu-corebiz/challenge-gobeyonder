@@ -1,13 +1,13 @@
 {
   "flex-layout.row#titleCarousel": {
     "children": [
-      "flex-layout.col#title"
+      "flex-layout.col#titleCarousel"
     ]
   },
-  "flex-layout.col#title": {
+  "flex-layout.col#titleCarousel": {
     "children": [
       "rich-text#titleCarousel",
-      "rich-text#line"
+      "rich-text#lineCarousel"
     ]
   },
   
@@ -17,7 +17,10 @@
   },
 
   "flex-layout.row#carousel": {
-    "children": ["list-context.product-list#carousel"]
+    "children": ["flex-layout.col#carouselContent"]
+  },
+  "flex-layout.col#carouselContent": {
+    "children": ["flex-layout.col#titleCarousel", "list-context.product-list#carousel"]
   },
 
   "product-summary.shelf#carousel": {
@@ -74,7 +77,7 @@
     }
   },
 
-  "rich-text#line": {
+  "rich-text#lineCarousel": {
     "props": {
       "text": "---",
       "blockClass":"line"
