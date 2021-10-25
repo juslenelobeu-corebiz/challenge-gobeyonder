@@ -1,5 +1,6 @@
-.input, .hideDecorators, .noAppearance {
-    border: none!important;
+.input--newsletterFormInput, .hideDecorators--newsletterFormInput, .noAppearance--newsletterFormInput {
+    border: none;
+    font-family: "LatoBold", sans-serif;
 }
 .input::placeholder {
     font-size: 12px;

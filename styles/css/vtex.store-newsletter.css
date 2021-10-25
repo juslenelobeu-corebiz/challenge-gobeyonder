@@ -14,7 +14,6 @@
 .formSubmitContainer--newsletterFormInput :global(.vtex-input-prefix__group) {
     width: 280px;
     border: none;
-    font-family: "LatoBold", sans-serif;
 }
 .formSubmitContainer {
     width: 140px;
