@@ -18,3 +18,16 @@
 .formSubmitContainer {
     width: 140px;
 }
+
+@media screen and (max-width: 576px){
+    .newsletterForm--newsletterForm {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .nameInputContainer--newsletterFormInput :global(.vtex-input-prefix__group), 
+    .emailInputContainer--newsletterFormInput :global(.vtex-input-prefix__group), 
+    .formSubmitContainer--newsletterFormInput :global(.vtex-input-prefix__group),
+    .formSubmitContainer {
+        width: 100%;
+    }
+}
