@@ -20,14 +20,13 @@
     display: flex;
 }
 
-.flexCol--footerCopyRights {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-}
-.flexColChild--footerCopyRights {
+.flexRow--footerCopyRights {
     display: flex;
     align-items: center;
+    justify-content: flex-end;
+}
+.flexRowContent--footerCopyRights {
+    width: 200px;
 }
 
 /* product page */
@@ -43,4 +42,19 @@
 }
 .flexColChild--productPagePrice :global(.vtex-product-price-1-x-installments) {
     font-size: .8rem;
+}
+
+@media screen and (max-width: 576px) {
+    .flexCol--footerLinks {
+        margin-top: 2rem;
+    }
+    .flexRow--footerCopyRights {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .flexRowContent--footerCopyRights {
+        display: flex;
+        justify-content: center;
+    }
 }
