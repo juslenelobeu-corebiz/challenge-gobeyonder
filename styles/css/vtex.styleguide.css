@@ -1,0 +1,6 @@
+.input, .hideDecorators, .noAppearance {
+    border: none!important;
+}
+.input::placeholder {
+    font-size: 12px;
+}

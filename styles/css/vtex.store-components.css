@@ -8,9 +8,6 @@
     border-bottom: thin solid black !important;
     border-radius: 0;
 }
-.searchBarInnerContainer--sticky-header :global(.vtex-styleguide-9-x-input)::placeholder {
-    font-size: 12px;
-}
 
 .infoCardContainer--fullbanner {
     height: 430px;

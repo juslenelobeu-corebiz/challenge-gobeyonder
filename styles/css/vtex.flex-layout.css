@@ -1,13 +1,11 @@
+/* newsletter */
 .flexRow--newsletter {
     background-color: #F2F2F2;
     padding: 2rem 0;
+    font-family: "LatoBold", sans-serif;
 }
 
-.flexRowContent--newsletter {
-    display: flex;
-    justify-content: center;
-}
-
+/* footer */
 .flexRow--footer {
     background: black;
     padding: 2rem 0;
@@ -17,11 +15,9 @@
     justify-content: center;
     gap: 1rem;
 }
-
 .flexColChild--footerLinks {
     height: auto!important;
     display: flex;
-    
 }
 
 .flexCol--footerCopyRights {
@@ -32,8 +28,4 @@
 .flexColChild--footerCopyRights {
     display: flex;
     align-items: center;
-}
-
-.flexColChild--newsletterFormInput {
-    width: 300px;
 }

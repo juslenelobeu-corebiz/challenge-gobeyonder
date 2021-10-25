@@ -1,5 +1,21 @@
 .formSubmitContainer--newsletterButton :global(.vtex-button) {
     width: 100%;
-    font-size: 12px;
+    font-size: 14px;
     text-transform: inherit
+}
+
+.newsletterForm--newsletterForm {
+    display: flex;
+    justify-content: center;
+    gap: .5rem;
+}
+.nameInputContainer--newsletterFormInput :global(.vtex-input-prefix__group), 
+.emailInputContainer--newsletterFormInput :global(.vtex-input-prefix__group), 
+.formSubmitContainer--newsletterFormInput :global(.vtex-input-prefix__group) {
+    width: 280px;
+    border: none;
+    font-family: "LatoBold", sans-serif;
+}
+.formSubmitContainer {
+    width: 140px;
 }
